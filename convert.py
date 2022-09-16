@@ -21,15 +21,19 @@ def mph_to_fts(mph):
 #Converting Inputs to Floats
 mph = input("Input speed in mph: ")
 mph = float(mph)
-inputvalue = input('Would you like 1) Convert to kph, 2) Convert to m/s, 3) Convert to ft/s')
+inputvalue = input('Would you like \n 1) Convert to kph, \n 2) Convert to m/s, \n 3) Convert to ft/s \n' )
 inputvalue = float(inputvalue)
 
-#Creating If Statements
-
-
-#Printing Answer
-print("Speed in kph is", mph_to_kph(mph))
-
-print("Speed in m/s is", mph_to_ms(mph))
-
-print("Speed in ft/s is", mph_to_fts(mph))
+#Creating If Statements and Printing Answers
+if inputvalue == 1:
+    print("Speed in kph is", mph_to_kph(mph))
+    exit()
+if inputvalue == 2:
+    print("Speed in ft/s is", mph_to_fts(mph))
+    exit()
+if inputvalue == 3:
+    print("Speed in m's is", mph_to_ms(mph))
+    exit()
+else:
+    print("Pick a number 1-3 you idiot")
+    exit()
